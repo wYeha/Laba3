@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body class="body">
+		<header>
+			<div class="header">
+				<div><img class="gif" src="gif.gif"></div>
+				<div class="web">Разработка WEB-интерфейса</div>
+			</div>
+		</header>
+		<div class="content">
+			<nav>
+				<ul class="menu">
+					<div class="box"><a href="#refs">Список ссылок</a></div>
+					<div class="box"><a href="#table">Таблица</a></div>
+					<div class="box"><a href="#form">Форма</a></div>
+				</ul>
+			</nav>
+		</div>
+		<div class="block">
+			<div class="text" id="refs">Список ссылок:</div>
+			<div>
+				Абсолютная гиперссылка на страницу сайта: 
+				<a href="http://www.youtube.com/" target="_blank">
+					сайт
+				</a>
+			</div>
+			<div>
+				Абсолютная гиперрсылка в протоколе https: 
+				<a href="https://www.youtube.com/" target="_blank">
+					сайт
+				</a>
+			</div>
+			<div>
+				Ссылка на файл на сервере FTP без авторизации: 
+				<a href="ftp://example/file.txt" target="_blank">
+					файл
+				</a>
+			</div>
+			<div>
+				Ссылка на файл на сервере FTP с авторизацией: 
+				<a href="ftp://login:password@example.com" target="_blank">
+					файл
+				</a>
+			</div>
+			<div>
+				Ссылка на фрагмент некоторого сайта: 
+				<a href="https://www.kinopoisk.ru/film/409424/#today-in-cinema-block" target="_blank">
+					сайт
+				</a>
+			</div>
+			<div>
+				Ссылка на фрагмент этой страницы: 
+				<a href="#header" target="_blank">
+					фрагмент
+				</a>
+			</div>
+			<div>
+				Ссылка с двумя параметрами: 
+				<a href="http://shpargalkablog.ru/2016/09/url-parameters-js.html?a&b" target="_blank">
+					сайт
+				</a>
+			</div>
+			<div>
+				Навигация по некоторому сайту: 
+			</div>
+			<ol>
+				<li>
+					<a href="https://www.kinopoisk.ru"title="Kinopoisk"target="_blank">
+						главная страница
+					</a>
+				</li>
+       			<li>
+       				<a href="https://www.kinopoisk.ru/media/news/"title="News"target="_blank">
+       					новости
+       				</a>
+       			</li> 
+       			<li>
+       				<a href="https://www.kinopoisk.ru/premiere/"title="Afisha"target="_blank">
+       					афиша
+       				</a>
+       			</li>
+       		</ol>
+       		<div>
+       			Ссылка без href: 
+       			<a title="а на самом деле нет">
+       				ссылка есть
+       			</a>
+       		</div>
+       		<div>
+       			Ссылка с пустым href: 
+       			<a href="">
+       				ничего здесь нет
+       			</a>
+       		</div>
+       		<div>
+       			Ссылка с запрещенной индексацией и запретом перехода поисковикам: 
+       			<a href="https://www.youtube.com/" target="_blank" content="noindex, nofollow">
+       				роботы не пройдут
+       			</a>
+       		</div>
+       		<div>
+       			Контекстная ссылка: 
+       			ничего ничего и тут 
+       			<a href="https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwigi-fC8q7zAhVxwIsKHUazCN8QPAgI" target="_blank">
+       				внезапная ссылка 
+       			</a>
+       			и опять ничего
+       		</div>
+       		<div>
+       			Картинка-ссылка: 
+       			<a href="https://apelsin.ru/" target="_blank">
+       				<img src="https://memepedia.ru/wp-content/uploads/2018/08/papich.jpg" width="35" height="25">
+       			</a>
+       		</div>
+       		<div>
+       			Картинка с областями-ссылками: 
+       			<div>
+       				<img src="https://static8.depositphotos.com/1288351/1054/i/600/depositphotos_10545204-stock-photo-large-star-field.jpg" usemap="#map" width="200" height="100" >
+       				<map name="map">
+       					<area shape ="circle" coords="50,50, 40" href="https://www.meme-arsenal.com/memes/	5e058a478a1956088d6c646b20f91c2b.jpg">
+       					<area shape="rec" coords="100,10, 190,90" href="https://www.meme-arsenal.com/memes/
+       						5e058a478a1956088d6c646b20f91c2b.jpg">
+       				</map>
+       			</div>
+       		</div>
+       		<div>
+       			Отоносительная в этом каталоге:
+       			<a href="mm.html">
+       				здесь
+       			</a>
+       		</div>
+       		<div>
+       			Относительная на каталог выше: 
+       			<a href="../m.html">
+       				тут
+       			</a>
+       		</div>
+       		<div>
+       			Относительная на два каталога выше:
+       			<a href="../../mmm.html">
+       				и тут
+       			</a>
+       		</div>
+		</div>
+		<div class="switchPos">
+			<div class="table">
+		      <div class="text" id="table">Таблица:</div>
+		      <table border="1">
+		        <tr>
+		          <td>
+		            Столбец1
+		          </td>
+		          <td>
+		            Столбец2
+		          </td>
+		          <td>
+		            Столбец3
+		          </td>
+		        </tr>
+		        <tr>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		        </tr>
+		        <tr>
+		          <td colspan="2">
+		            ヽ(°□° )ノ
+		          </td>
+
+		          <td>
+		            (◕‿◕)
+		          </td>
+		        </tr>
+		        <tr>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		          <td colspan="2">
+		            ヽ(°□° )ノ
+		          </td>
+		        </tr>
+		        <tr>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		        </tr>
+		        <tr>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		          <td>
+		            (◕‿◕)
+		          </td>
+		        </tr>
+		      </table>
+		    </div>
+			<div class="form">
+				<div class="text" id="form">
+					Форма:
+				</div>
+				<form>
+					<div>
+						Имя:
+						<input placeholder="Name">
+					</div>
+					<div>
+						Email:
+						<input placeholder="Email">
+					</div>
+					<div>
+						Дата рождения:
+						<input type="date">
+					</div>
+					<div>
+						Пол:
+						<input type="radio" name="q">Мужчина
+						<input type="radio" name="q">Женщина
+					</div>
+					<div>
+						Количество конечностей:
+						<input type="radio" name="k">0
+						<input type="radio" name="k">2
+						<input type="radio" name="k">3
+						<input type="radio" name="k">4
+						<input type="radio" name="k">6???
+					</div>
+					<div>
+						Суперспособность:
+						<select>
+							<option>Бессмертие</option>
+							<option>Прохождение сквозь стены</option>
+							<option>Левитация</option>
+						</select>
+					</div>
+					<div>
+						Биография:
+						<textarea placeholder="Рассказывай">
+						</textarea>
+					</div>
+					<div>
+						Я поставлю галочку в поле справа:
+						<input type="checkbox">
+					</div>
+					<div>
+						<input type="submit" value="Отправить">
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div>©Алексей Купальян</div>	
+		</footer>
+	</body>
+</html>
